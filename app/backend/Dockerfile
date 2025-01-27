@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY ./ /app
 
-RUN python -m pip install -r requirements.txt
+RUN python -m pip install --no-cache-dir -r /app/requirements.txt
 
 RUN python -m pip install gunicorn
 
