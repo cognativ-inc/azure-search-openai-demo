@@ -64,9 +64,9 @@ export const Answer = ({
     return (
         <Stack className={`${styles.answerContainer} ${isSelected && styles.selected}`} verticalAlign="space-between">
             <Stack.Item>
-                <Stack horizontal horizontalAlign="space-between">
+                <Stack style={{ display: "none" }} horizontal horizontalAlign="space-between">
                     <AnswerIcon />
-                    <div>
+                    <div style={{ display: "none" }}>
                         <IconButton
                             style={{ color: "black" }}
                             iconProps={{ iconName: copied ? "CheckMark" : "Copy" }}
