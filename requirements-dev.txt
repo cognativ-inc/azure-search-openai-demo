@@ -12,4 +12,5 @@ pytest-snapshot
 pre-commit
 locust
 pip-tools
+pip install -r
 mypy==1.14.1
