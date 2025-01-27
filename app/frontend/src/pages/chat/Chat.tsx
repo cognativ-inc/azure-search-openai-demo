@@ -27,9 +27,7 @@ import { AnalysisPanel, AnalysisPanelTabs } from "../../components/AnalysisPanel
 import { HistoryPanel } from "../../components/HistoryPanel";
 import { HistoryProviderOptions, useHistoryManager } from "../../components/HistoryProviders";
 import { HistoryButton } from "../../components/HistoryButton";
-import { SettingsButton } from "../../components/SettingsButton";
 import { ClearChatButton } from "../../components/ClearChatButton";
-import { UploadFile } from "../../components/UploadFile";
 import { useLogin, getToken, requireAccessControl } from "../../authConfig";
 import { useMsal } from "@azure/msal-react";
 import { TokenClaimsDisplay } from "../../components/TokenClaimsDisplay";
@@ -362,8 +360,8 @@ const Chat = () => {
                 </div>
                 <div className={styles.commandsContainer}>
                     <ClearChatButton className={styles.commandButton} onClick={clearChat} disabled={!lastQuestionRef.current || isLoading} />
-                    {showUserUpload && <UploadFile className={styles.commandButton} disabled={!loggedIn} />}
-                    <SettingsButton className={styles.commandButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
+                    {/* {showUserUpload && <UploadFile className={styles.commandButton} disabled={!loggedIn} />}
+                    <SettingsButton className={styles.commandButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} /> */}
                 </div>
             </div>
             <div className={styles.chatRoot} style={{ marginLeft: isHistoryPanelOpen ? "300px" : "0" }}>
