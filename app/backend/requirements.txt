@@ -4,8 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-pip install -r
-
+python -m pip install -r requirements.txt
 aiofiles==24.1.0
     # via
     #   prompty
